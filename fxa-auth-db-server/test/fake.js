@@ -43,7 +43,8 @@ module.exports.newUserDataHex = function() {
   data.sessionToken = {
     data : hex32(),
     uid : data.accountId,
-    createdAt: Date.now()
+    createdAt: Date.now(),
+    userAgent: 'fake user agent string'
   }
 
   // keyFetchToken
@@ -110,7 +111,8 @@ module.exports.newUserDataBuffer = function() {
   data.sessionToken = {
     data : buf32(),
     uid : data.accountId,
-    createdAt: Date.now()
+    createdAt: Date.now(),
+    userAgent: ''
   }
 
   // keyFetchToken
