@@ -11,7 +11,7 @@
     "fxa-auth-db-mysql": "bin/db_patcher.js"
   },
   "scripts": {
-    "test": "grunt && node ./bin/db_patcher.js >/dev/null &&  ./scripts/tap-coverage.js test/local test/db test/server",
+    "test": "grunt && node ./bin/db_patcher.js >/dev/null &&  ./scripts/tap-coverage.js test/local test/db",
     "test-mem": "TODO",
     "start": "node ./bin/db_patcher.js >/dev/null && node ./bin/server.js",
     "outdated": "npm outdated --depth 0"
