@@ -8,7 +8,7 @@ module.exports = function (grunt) {
   grunt.config('copyright', {
     app: {
       src: [
-        '{,bin/,config/,db/,scripts/}*.js'
+        '{,bin/,config/,lib/,lib/db/,lib/server/,scripts/}*.js'
       ],
       options: {
         pattern: 'This Source Code Form is subject to the terms of the Mozilla Public'
@@ -16,7 +16,7 @@ module.exports = function (grunt) {
     },
     tests: {
       src: [
-        'test/{remote,local,backend}/*.js'
+        'test/{remote,local,server,db}/*.js'
       ],
       options: {
         pattern: 'Any copyright is dedicated to the Public Domain.'

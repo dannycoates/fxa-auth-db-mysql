@@ -10,7 +10,7 @@ module.exports = function (grunt) {
       eslintrc: '.eslintrc'
     },
     files: [
-      '{,grunttasks/,lib/,scripts/,test/,test/backend/,test/local/}*.js'
+      '{,grunttasks/,lib/,scripts/,test/,test/db/,test/local/,test/server/}*.js'
     ]
   })
 
