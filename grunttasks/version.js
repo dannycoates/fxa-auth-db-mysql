@@ -18,15 +18,15 @@
 //
 
 module.exports = function (grunt) {
-  'use strict';
+  'use strict'
 
   grunt.registerTask('version', [
     'bump-only:minor',
     'bump-commit'
-  ]);
+  ])
 
   grunt.registerTask('version:patch', [
     'bump-only:patch',
     'bump-commit'
-  ]);
-};
+  ])
+}
